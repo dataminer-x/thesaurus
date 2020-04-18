@@ -7,9 +7,7 @@ from kalliope.core.NeuronModule import NeuronModule, MissingParameterException, 
 class Thesaurus(NeuronModule):
     def __init__(self, **kwargs):
         super(Thesaurus, self).__init__(**kwargs)
-         api_key = 'a1dda690-09f1-4bed-b9d0-6abe98c6402b'
         self.api_key = kwargs.get('api_key', None)
-         word = 'data'
         self.word = kwargs.get('word', None)
         if not self._is_parameters_ok():
             raise InvalidParameterException
