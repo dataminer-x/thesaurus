@@ -1,0 +1,12 @@
+- name: Kalliope thesaurus neuron install
+  hosts: localhost
+  gather_facts: no
+  connection: local
+  become: true
+
+  tasks:
+    - name: "Install pip dependencies"
+      pip:
+        name: thesaurus
+        version: 1
+        executable: pip3

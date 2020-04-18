@@ -1,0 +1,11 @@
+---
+name: "thesaurus"
+type: "neuron"
+author: "dataminer-x"
+
+kalliope_supported_version:
+  - 0.6
+
+tags:
+  - "thesaurus"
+  - "reference"
