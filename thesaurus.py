@@ -25,7 +25,7 @@ class Thesaurus(NeuronModule):
     #
     #     return True
 
-    def _get_ref_data(self):
+    # def _get_ref_data(self):
         url = 'https://www.dictionaryapi.com/api/v3/references/thesaurus/json/' + word + '?key=' + api_key
         req = requests.get(url)
         todos = json.loads(req.text)
